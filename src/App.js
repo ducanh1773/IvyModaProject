@@ -19,6 +19,7 @@ function App() {
     <div>
       <Routes >
         <Route path='/' element={<HomePageIvyModa></HomePageIvyModa>}></Route>
+        <Route path='*' element={<HomePageIvyModa></HomePageIvyModa>}></Route>
         <Route path='/DanhMuc/HangNumoive' element={<OptionProduct></OptionProduct>}></Route>
         <Route path='/DanhMuc/DELICATEURBAN' element={<DelicateurbanForWomanProduct></DelicateurbanForWomanProduct>}></Route>
         <Route path='/Chitietsanpham' element={<ProductDetail></ProductDetail>}></Route>
