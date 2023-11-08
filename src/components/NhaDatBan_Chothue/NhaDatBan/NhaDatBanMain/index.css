@@ -1,4 +1,8 @@
-  @media screen and (min-width:1440px) and (max-width:2560px) {
+.n456{
+    text-transform: capitalize;
+}
+
+@media screen and (min-width:1440px) and (max-width:2560px) {
       .ImgNDB {
           width: 461px;
           height: 233px;

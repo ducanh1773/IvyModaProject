@@ -2,7 +2,7 @@
     .LastIntroduce{
         display: grid;
         align-items: center;
-        width: 1850px;
+        width: 95%;
         padding-left: 100px;
         padding-top: 37px;
         grid-template-columns: auto auto auto auto;

@@ -1,0 +1,50 @@
+.InformationOfProjectIvy{
+    cursor: pointer;
+}
+
+.ColorAndFavorite{
+    display: flex;
+}
+
+.ImgOfproductionIvy{
+    width: 60%;
+}
+.ColorAndFavorite{
+    display: flex;
+}
+
+.IconOfProductInArrival{
+    padding-left: 50%;
+}
+
+.NameOfProduction p{
+    text-transform: capitalize;
+    height: 5%;
+}
+
+.PriceAndBuy{
+    display: grid;
+    width: 80%;
+    grid-template-columns: auto auto;
+
+    
+}
+
+.PriceOfProject{
+    margin: 0;
+    display: grid;
+    font-weight: 500;
+}
+
+.IconCartOfPorject{
+    
+}
+.AllImgSaleOnIvyModa{
+    margin-left: 1%;
+}
+
+.splide:not( .is-overflow ) .splide__list {
+    justify-content: center;
+  }
+
+

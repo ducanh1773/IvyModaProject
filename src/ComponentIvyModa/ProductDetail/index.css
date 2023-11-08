@@ -1,0 +1,143 @@
+.SubjectOfProductDetail {
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+/* Main product CSS */
+/* ProductLeft CSS */
+.AllImgAndPriceAndDescribeOfProduct {
+    display: flex;
+    width: 95%;
+    margin-left: 5%;
+}
+
+.ProductContentLeft {
+    width: 55%;
+    display: flex;
+
+
+}
+
+.ProductContentRight {
+    width: 40%;
+}
+
+.ImgBigProduuctIvy {
+    width: 100%;
+}
+
+.ImgSmallProductIVY {
+    width: 60%;
+    margin-bottom: 15%;
+}
+
+.allBigImgProductIVY {
+    width: 95%;
+    margin-right: 1%;
+}
+
+.ALLSmallImgProductIVY {
+    display: grid;
+    width: 35%;
+}
+
+/* ProductRightCSS */
+
+.NameOfProductIVY {
+    margin-top: 0px;
+}
+
+.IdNotableAndStarForProduct {
+    display: flex;
+    width: 100%;
+
+}
+
+.IdNotableAndStarForProduct p {
+    margin: 0px;
+    margin-right: 3%;
+
+}
+
+.IdNotableAndStarForProduct div {
+    margin-right: 3%;
+}
+
+.PriceMainAndPriceAfterSale {
+    display: flex;
+    align-items: center;
+}
+
+
+.PriceMainAndPriceAfterSale p {
+    margin-left: 3%;
+    color: rgb(194, 194, 194);
+    text-decoration: line-through;
+}
+
+.AllSizeFromProductDetail {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    width: 60%;
+    text-transform: uppercase;
+}
+
+.SizeFromProductDetail {
+    color: black;
+}
+
+.ButtonChangeNumberBuy {
+    width: 70%;
+    background-color: white;
+    border-radius: 16px 0px;
+    border: 1px solid rgb(231, 231, 231);
+
+}
+
+.NumberBuyProduct {
+    display: flex;
+
+}
+
+.AllInputNumberBuy {
+    display: flex;
+    width: 25%;
+    margin-left: 3%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+
+.InputNumberBuyIVYModa {
+    width: 80%;
+    appearance: none;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 16px 0px;
+    text-align: center;
+    justify-content: center;
+    outline: none;
+}
+
+.AllButtonBuy {
+    display: flex;
+}
+
+.ButtonBuyProduct {
+    border: 1px solid rgb(212, 211, 211);
+    margin-left: 3%;
+    margin-top: 4%;
+    text-transform: uppercase;      
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px 0px;
+}
+
+.ButtonBuyProductLeft{
+    
+}

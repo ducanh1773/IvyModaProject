@@ -1,0 +1,83 @@
+.InformationOfProjectIvyFullPage{
+    cursor: pointer;
+    margin-bottom: 15%;
+}
+
+.ColorAndFavorite{
+    display: flex;
+}
+
+.ImgOfproductionIvyFullPage{
+    width: 93%;
+}
+.ColorAndFavoriteFullPage{
+    display: flex;
+}
+
+.IconOfProductInArrivalFullPage{
+    margin-left: 84%;
+}
+
+.NameOfProductionFullPageIvy p{
+    text-transform: capitalize;
+    height: 5%;
+}
+
+.PriceAndBuyFullPageIvy{
+    display: grid;
+    width: 80%;
+    grid-template-columns: auto auto;
+    align-items: center;
+    font-weight: 700;
+
+    
+}
+
+.PriceOfProject{
+    margin: 0;
+    display: grid;
+    font-weight: 500;
+}
+
+.PriceOfProjectFullPageIvy{
+    
+}
+
+.IconCartOfPorjectFullPageIvy{
+   display: flex;
+   justify-content: center;
+}
+
+.IconCartOfPorjectFullPageIvy{
+    border: 1px solid rgb(190, 190, 190);
+    width: 50%;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.iconCart{
+   
+   
+}
+
+.IconCartOfPorjectFullPageIvy{
+    margin-left: 77%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+col
+
+
+.splide:not( .is-overflow ) .splide__list {
+    justify-content: center;
+  }
+
+  .iconShoppingIvyModa{
+
+  }
+
+

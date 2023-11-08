@@ -1,0 +1,174 @@
+.AllIntroduceAndIvyPage {
+    margin-top: 3%;
+    display: flex;
+    margin-left: 5%;
+    width: 95%;
+}
+
+.IvyPositionAndPhonenumber {
+    width: 25%;
+}
+
+.LogoIvyOnIntroduce {
+    width: 15%;
+}
+
+.ImgOfSocialnetworkingOfIvyMODA {
+    width: 49%;
+}
+
+.ImgOfSocialnetworkingOfIvyMODAFB {
+    width: 38%;
+}
+
+.SocialnetworkingOfIvyMODA {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, auto);
+}
+
+.ImgDCMAprotectedAndLicense {
+    width: 25%;
+}
+
+
+
+.IntroduceAboutIvy {
+    width: 100%;
+    display: grid;
+}
+
+
+
+.IvyPositionAndPhonenumber {}
+
+.ServiceOfIvy {
+    width: 100%;
+    display: grid;
+}
+
+.AllIntroduceAboutIvy {
+    width: 11%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.SubjectOfIntroduceAboutIvy {
+    margin-bottom: 10%;
+
+}
+
+.IntroduceAboutIvy a {
+    text-decoration: none;
+    color: black;
+    margin-top: 17%;
+
+}
+
+.ServiceOfIvy a {
+    text-decoration: none;
+    color: black;
+    margin-top: 5%;
+}
+
+.ConnectWithIvy {
+    display: grid;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.ConnectWithIvy a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.AllReceiveMoreCollectFromIvy {
+    width: 23%;
+}
+
+
+
+
+.SignInIvyModa {
+    display: flex;
+}
+
+.AllReceiveMoreCollectFromIvy {
+    border: 5px solid rgb(221, 221, 221);
+    height: max-content;
+    border-top-left-radius: 16%;
+    border-bottom-right-radius: 16%;
+    width: 80%;
+}
+
+.ReceiveMoreCollectFromIvy {
+    padding: 4%;
+}
+
+.InputEmail {
+    margin-top: 5%;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(163, 161, 161);
+}
+
+.ButtonSignUpPadding {
+    padding: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ButtonSignUp {
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.ButtonSignUp:hover {
+    background-color: black;
+    color: white;
+    transition: 1s;
+
+}
+
+.FullPageAllIntroduceAndIvyPage {
+    width: 100%;
+    border-top: 1px solid rgb(207, 207, 207);
+}
+
+.LastIntroduceIvymoda {
+    margin-top: 2%;
+    border-top: 1px solid rgb(197, 197, 197);
+    display: flex;
+    justify-content: center;
+
+}
+
+.LastIntroduceIvymoda p {
+    margin-bottom: 3%;
+}
+
+.DownloadAppIvyModa {
+    margin-top: 100px;
+}
+
+.DownloadIvyModaOnMbile {
+    display: grid;
+
+}
+
+.DownloadIvyModaOnMbile a{
+    margin-bottom: 3%;
+    cursor: pointer;
+}

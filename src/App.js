@@ -4,38 +4,25 @@ import * as React from 'react';
 import { Reuse } from './components/Reuse';
 import { useState, useEffect } from 'react';
 import { Range, getTrackBackground } from 'react-range';
-import Main_Page_BDS from './components/Main_BDS';
-import HeaderNhaDatBan from './components/NhaDatBan_Chothue/NhaDatBan/NhaDatBanHeader';
-import ProjectBDSMain from './components/ProjectBDS/MainProjectBDS';
-import NewsBDSMain from './components/NewsBDS/NewsBDSMain';
-import WikiBDSMain from './components/WikiBDS/WikiBDSMain';
-import EvaluteProjectMain from './components/EvaluteProject';
-import ItermNDB from './components/NhaDatBan_Chothue/ItermNDB';
-import Dangnhap from '../src/dangnhap'
-import DangKy from '../src/dangky'
-import ItermNewsBDS from '../src/components/NewsBDS/NewsBDSMain/NewsBDSIterm';
-
 import { Routes, Route, Outlet, Link } from "react-router-dom";
-
-
+import HeaderIvyMoDa from "./ComponentIvyModa/HeaderIvymoda"
+import NewArrivalIvyModa from "./ComponentIvyModa/NewArrivalIvyModa"
+import IntroduceAndEndIvyPage from "./ComponentIvyModa/IntroduceAndEndIvyPage"
+import { Splide } from '@splidejs/react-splide';
+import OptionProduct from "../src/ComponentIvyModa/ProductPortfolio"
+import HomePageIvyModa from "../src/ComponentIvyModa/HomePageIVYModa"
+import DelicateurbanForWomanProduct from "../src/ComponentIvyModa/ProductPortfolio/DelicateUrbanForWomanIvy"
+import ProductDetail from "../src/ComponentIvyModa/ProductDetail"
 function App() {
-  
+
   return (
     <div>
-      <Routes>
-        <Route path='/' element={<Main_Page_BDS></Main_Page_BDS>}></Route>
-        <Route path='/wiki' element={<WikiBDSMain></WikiBDSMain>}></Route>
-        <Route path='/nha_dat_ban' element={<HeaderNhaDatBan></HeaderNhaDatBan>}></Route>
-        <Route path='/duan' element={<ProjectBDSMain></ProjectBDSMain>}></Route>
-        <Route path="*" element={<Main_Page_BDS></Main_Page_BDS>} />
-        <Route path='/tintucbds' element={<NewsBDSMain></NewsBDSMain>}></Route>
-        <Route path='/phantichdanhgia'element={<EvaluteProjectMain></EvaluteProjectMain>}></Route>
-        <Route path='/ban-nha-o-pho-thi-sach-phuong-thang-tam' element = {<ItermNDB></ItermNDB>}></Route>
-        <Route path='/dang-nhap-bds' element={<Dangnhap></Dangnhap>}></Route>
-        <Route path='/dang-ky-bds' element = {<DangKy></DangKy>}></Route>
-        <Route path='/ItermTinTuc' element= {<ItermNewsBDS></ItermNewsBDS>}></Route>
+      <Routes >
+        <Route path='/' element={<HomePageIvyModa></HomePageIvyModa>}></Route>
+        <Route path='/DanhMuc/HangNumoive' element={<OptionProduct></OptionProduct>}></Route>
+        <Route path='/DanhMuc/DELICATEURBAN' element={<DelicateurbanForWomanProduct></DelicateurbanForWomanProduct>}></Route>
+        <Route path='/Chitietsanpham' element={<ProductDetail></ProductDetail>}></Route>
       </Routes>
-
     </div>
   )
 }

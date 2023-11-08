@@ -1,0 +1,145 @@
+.AllNewArrivalIvy{
+   
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.NewArrivalMain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.ArrivalProductionForWoman{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    margin-left: 10%;
+}
+
+.OptionOfArrival{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ArrivalForDifferenceObject{
+    font-weight: 200;
+    margin-right: 3%;
+        cursor: pointer;
+        
+}
+
+.ImgSaleOnIvyModa{
+    width: 100% ;
+    border-bottom-right-radius:10%;
+    border-top-left-radius:10%;
+}
+
+.BorderIvyModa{
+    border: 1px solid rgb(217, 214, 214);
+    height: fit-content;
+    width: 95%;
+    margin-top: 2%;
+}
+
+.AllImgSaleOnIvyModa{
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.AllOptionInArrival{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+
+}
+.LinkArrvial{
+    text-decoration: none;
+    border: 3px solid rgb(117, 116, 116);
+    /* border-bottom-right-radius:40%;
+    border-top-left-radius:40%; */
+    border-start-start-radius: 30%;
+    border-end-end-radius: 30%;
+    color: black;
+    width: 7%;
+    display: flex;
+    justify-content: center;
+    height: 3%;
+}
+
+
+.AllOptionInArrival :hover{
+    color: white;
+    background-color: black;
+    transition: 1s;
+}
+
+.TheNoteFromRealValue{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    
+}
+
+.SubjectNoteFromRealValue{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.OptionFromTheRealValue{
+    width: 70%;
+}
+
+.OptionFromTheRealValue img{
+    width: 100%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+.OptionFromTheRealValue a{
+    text-decoration: none;
+}
+
+.AllOptionFromTheNoteFromRealValue{
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+
+.AllOptionFromTheNoteFromRealValue h3{
+    display: grid;
+    justify-content: center;
+    color: rgb(60, 60, 60);
+}
+
+.OptionFromGallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.GalleryFromIvyModa{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.OptionFromGallery img{
+    width: 90%;
+    margin-left: 10%;
+    margin-bottom: 4%;
+}
+
+.GalleryFromIvyModa{
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+

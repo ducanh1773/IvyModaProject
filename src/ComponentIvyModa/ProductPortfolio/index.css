@@ -1,0 +1,295 @@
+.ButtonToHomeAndNewArrival {
+    display: flex;
+    color: rgb(163, 162, 161);
+    margin-left: 5%;
+
+}
+
+.BackToHomeIvyModa {
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+.BackToNewArrivalIvyModa {
+    cursor: pointer;
+}
+
+
+
+.OptionFromNewArriaalPage h5 {
+    margin: 0;
+}
+
+.OptionFromNewArriaalPage {
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+
+.AllOptionFromNewArriaalPage {
+    margin-left: 5%;
+    width: 100%;
+}
+
+.ObjectOfOption {
+    margin-top: 3%;
+    width: 120%;
+    font-weight: 400;
+    font-size: 100%;
+}
+
+.OptionFromNewArriaalPage {
+    margin-top: 2%;
+    width: 100%;
+}
+
+.IconFromOblectOption {
+    width: 30%;
+    float: right;
+    padding-left: 5%;
+}
+
+.AllSizeFromOption {
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+
+}
+
+.SizeFromOption{
+  border:  1px solid rgb(203, 202, 202);
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  border-bottom-right-radius: 7px;
+  border-top-left-radius: 7px;
+  height: 45%;
+  cursor: pointer;
+  color:rgb(203, 202, 202); ;
+
+}
+
+
+.AllColorFromOption {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    width: 95%;
+}
+
+.ColorFromOption {
+    color: white;
+    background-color: black;
+    width: 40%;
+    height: 50%;
+    border-radius: 100%;
+    cursor: pointer;
+
+}
+
+.TippyColor {
+    background-color: black;
+    color: white;
+}
+
+.TippyColor p {
+    padding: 1%;
+}
+
+.OptionDiscountOnIvyModa {
+    display: flex;
+}
+
+.NameOfOptionDiscountOnIvyModa {
+    margin-left: 3%;
+}
+
+.AllOptionNewsArrivalClothes {
+    overflow-y: scroll;
+    height: 200px;
+    width: 75%;
+    margin-left: 13%;
+    overflow-x: hidden;
+    
+    
+    
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: white;
+    transition-delay: 1s;
+    height: 500px;
+    
+    
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    transition-delay: 1s;
+    height: 500px;
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    transition-delay: 1s;
+    height: 500px;
+    
+
+  }
+
+  .HighSystOpTion{
+    display: flex;
+  }
+
+  .NameHighSystOpTion{
+    margin-left: 3%;
+  }
+
+  .FilterBTNForAllOptin{
+    width: 115%;
+    margin-left: 11%;
+    display: flex;
+    
+  }
+
+  .RemoveFiltertn{
+    width: 25%;
+    height: 5%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-right: 7%;
+    cursor: pointer;
+    margin-left: 7%;
+  }
+
+  .RemoveFiltertn h5{
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+
+  .RemoveFiltertn:hover{
+    transition: 1s ;
+    color: white;
+    background-color: black;
+    
+  }
+
+  .FilterBtn{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 20%;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+  }
+
+  .FilterBtn h5{
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+
+  .AllOptionAndfilter{
+    width: 29%;
+  }
+
+  .FilterBtn:hover{
+    transition: 1s;
+    color: black;
+    background-color: white;
+   
+  }
+
+  .AllOptionFilterAndProductOfIvyModa{
+    width: 100%;
+    display: flex;
+    margin-top: 1%;
+  }
+
+
+  .SubjectOfProductIvyModa{
+    margin-top: 0px;
+  }
+
+  .AllPrductAndOpArrangeOfIvyModa{
+    display: flex;
+    margin-bottom: 1%;
+  }
+
+  .AllOptionArrnageProductInIvyModa{
+    border: 1px solid rgb(195, 195, 195);
+    margin-left: 56%;
+    width: 25%;
+    display: flex;
+    padding-left: 1%;
+    align-items: center;
+    border-radius:50px ;
+    cursor: pointer;
+  }
+
+  .MoreOptionArrangeIvyModa{
+    padding-right: 50%;
+  }
+
+  .MoreOptionArrangeIvyModa{
+    margin: 0;
+  }
+
+  .BorderAllProductAndArangeProductOfIvy{
+    width: 70%;
+  }
+
+  .AlloptionArrangeProductIVYmODA{
+    border: 1px solid rgb(218, 218, 218);
+    width: 20%;
+    margin-left: 48%;
+    margin-top: 1% ;
+    display: grid;
+    border-radius: 7px;
+    z-index: 4;
+    background-color: white;
+    position: absolute;
+    
+    
+  }
+
+  .AlloptionArrangeProductIVYmODA p{
+    margin-left: 10%;
+    cursor: pointer;
+    font-weight: 200;
+    margin-bottom: 5px;
+
+  }
+  
+  .AlloptionArrangeProductIVYmODA p:hover{
+    font-weight: 600;
+    transition: 1s;
+  }
+
+  .AllProductionOnArrivalPageIvy{
+    width: 100%;
+    display: grid;
+    margin-top: 3%;
+    
+    z-index: 2;
+    grid-template-columns: repeat(4,auto);
+  }
+  
+
+  

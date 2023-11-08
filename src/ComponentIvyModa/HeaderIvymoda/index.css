@@ -1,0 +1,332 @@
+.Header_IVYMoDa {
+    display: flex;
+    width: 89%;
+    padding-top: 1%;
+    align-items: center;
+    padding-left: 5%;
+    
+
+}
+
+.OptioneIvyModa {
+    display: grid;
+    font-size: 14px;
+    grid-template-columns: repeat(6, auto);
+    width: 37%;
+    padding-right: 10%;
+
+
+
+}
+
+.OptionIvyModa {
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+.OptionIvyModa:hover {
+    color: #AC2F33;
+}
+
+
+.LogoIvyOnHeader {
+    display: flex;
+
+}
+
+.ImgInLogoIvy {
+    width: 60%;
+    
+
+}
+
+.NaviSearchBar {
+    border: 1px solid rgb(218, 216, 216);
+    width: 401px;
+    display: flex;
+    height: 40px;
+    border-radius: 5px;
+    align-items: center;
+    margin-right: 10%;
+
+}
+
+.InputSearchInHeaderIvy {
+    outline: none;
+    width: 100%;
+    border: none;
+    margin-top: 1%;
+
+
+}
+
+.SearchBoxOnIvy {
+    display: flex;
+    align-items: center;
+
+}
+
+.SpecialOptionIvy {
+    color: red;
+}
+
+.OptionSearchOnHeaderIvy {
+    width: 30%;
+    display: flex;
+
+    align-items: center;
+}
+
+.OptioneHeaderIvyOnSearch {
+    cursor: pointer;
+    padding-right: 10%;
+    color: black;
+}
+
+.OptionOnWomanClothes {
+    display: flex;
+    padding-left: 2%;
+    background-color: white;
+
+}
+
+
+.AccesoryAndSale {
+    display: flex;
+}
+
+
+.NoneSpecialClothes {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    width: 63%;
+}
+
+.SpecialOptionForWoman {
+    width: 20%;
+}
+
+.SubjectOptionForWoman {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.SubjectOptionForWoman:hover {
+    color: #AC2F33;
+    cursor: pointer;
+}
+
+.ItermForWomanClothes {
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 0px;
+    margin: 4px;
+
+
+}
+
+.AccesoryAndSale {
+    padding-left: 22%;
+}
+
+.SpecialSaleOptionForWoman {
+    color: red;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.OptionSaleForWonman {
+    padding-left: 5%;
+    text-transform: capitalize;
+
+}
+
+.AllOptioneClothesForWoman {
+    margin-top: 1%;
+    width: 80%;
+    border: 1px solid rgb(213, 213, 213);
+    margin-left: 4%;
+    position: absolute;
+    background-color: white;
+    padding-bottom: 3%;
+}
+
+.OptionClothesForMen {
+    display: flex;
+    background-color: white;
+   
+}
+
+.AllOptionClothesForMen {
+    margin-left: 4%;
+    width: 80%;
+    position: absolute;
+    background-color: white;
+    padding-bottom: 3%;
+    border: 1px solid rgb(214, 214, 214);
+
+}
+
+.SpecialOptionClothesForMen {
+    padding-left: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.OptionShirtForMen,
+.OptionPantsForMen,
+.OptionshoesForMen {
+    padding-right: 3%;
+}
+
+.OptionClothesForKids {
+    display: flex;
+   
+    background-color: white;
+
+}
+
+.AllOptionClothesForKids {
+    margin-left: 4%;
+    width: 80%;
+    position: absolute;
+    background-color: white;
+    padding-bottom: 3%;
+    border: 1px solid rgb(214, 214, 214);
+
+
+}
+
+.OptionClothesForGirls,
+.OptionClothesForBoys {
+    padding-right: 2%;
+}
+
+.AllInformationOfIvyOnNaviBar {
+    margin-left: 30.5%;
+    margin-top: 0px;
+    position: absolute;
+    width: 70%;
+
+}
+
+
+.InformationOfIvyOnNaviBar {
+    background-color: white;
+    border: 1px solid rgb(213, 213, 213);
+    width: 20%;
+    display: grid;
+    justify-content: center;
+    height: 150px;
+    grid-template-rows: auto auto auto;
+}
+
+.InformationOfIvyOnNaviBar h5 {
+
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.SubjectOptionForInFormation {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+}
+
+
+.OptionSaleSubjectOnNaviBar {
+    display: flex;
+    width: 80%;
+    padding-bottom: 3%;
+}
+
+.AllOptionSaleSubjectOnNaviBar {
+    margin-left: 4%;
+    width: 90%;
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgb(214, 214, 214);
+
+   
+}
+
+.OptionSale {
+    color: red;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.OptionSaleFirst {
+    padding-right: 3%;
+    padding-left: 4%;
+}
+
+.MostSearchIterm{
+   padding-left: 5%;
+   padding-bottom: 5%;
+  
+}
+
+.AllMostSearchIterm {
+    margin-left: 60.3%;
+    width: 35%;
+    display: grid;
+    border: 1px solid rgb(233, 232, 232);
+    height: fit-content;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 5;
+    
+    
+}
+
+.OptionMostSearch {
+    text-decoration: none;
+    color: black;
+
+
+    padding: 8px;
+    font-size: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.OptionMostSearchFirst {
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.OptionMostSearchSecond {
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.OptionMostSearchBoder {
+    border: 1px solid rgb(229, 227, 227);
+    margin-right: 5%;
+    width: 13%;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    
+
+}
+
+
+.AllMostSearchIterm , .AllOptionSaleSubjectOnNaviBar , .AllInformationOfIvyOnNaviBar ,.AllOptionClothesForKids , .AllOptionClothesForMen , .AllOptioneClothesForWoman{
+    z-index: 5;
+}
+
+.LinkToMorePrd{
+    text-decoration: none;
+    color: black;
+}
