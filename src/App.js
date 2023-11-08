@@ -17,6 +17,7 @@ function App() {
 
   return (
     <div>
+      <HomePageIvyModa></HomePageIvyModa>
       <Routes >
         <Route path='/' element={<HomePageIvyModa></HomePageIvyModa>}></Route>
         <Route path='*' element={<HomePageIvyModa></HomePageIvyModa>}></Route>
