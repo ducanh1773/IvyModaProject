@@ -39,6 +39,7 @@
 .ALLSmallImgProductIVY {
     display: grid;
     width: 35%;
+    height: max-content;
 }
 
 /* ProductRightCSS */
@@ -131,13 +132,136 @@ input[type="number"]::-webkit-outer-spin-button {
     border: 1px solid rgb(212, 211, 211);
     margin-left: 3%;
     margin-top: 4%;
-    text-transform: uppercase;      
+    text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 16px 0px;
+    cursor: pointer;
+
 }
 
-.ButtonBuyProductLeft{
+.CheckSizeOfCustomer {
+    margin-bottom: 10px;
+}
+
+.CheckSizeOfCustomer {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.CheckSizeOfCustomer:hover {
+    color: burlywood;
+
+}
+
+
+.ButtonBuyProductLeft {
+    width: 30%;
+    height: 50px;
+    color: white;
+    background-color: black;
+    margin-left: 0px;
+
+}
+
+.ButtonBuyProductLeft:hover {
+    color: black;
+    background-color: white;
+    transition: 1s;
+}
+
+.ButtonBuyProductRight {
+    width: 30%;
+    height: 50px;
+}
+
+.ButtonBuyProductRight:hover {
+    color: white;
+    background-color: black;
+    transition: 1s;
+}
+
+.buttonIconLikeTheProduct {
+    width: 9%;
+    border: 1px solid black;
+
+}
+
+.AllIntroduceTheProductDetail {
+    display: flex;
+    margin-top: 7%;
+}
+
+.IntroduceTheProductDetail {
+    text-transform: uppercase;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+.IntroduceTheProductDetail:after {
+    text-decoration: underline;
+}
+
+.DesCritionOfOptionInIntroduceDetail {}
+
+.InformationAboutPhotosample {
+    display: flex;
+    align-items: center;
+}
+
+.InformationAboutPhotosample h5 {
+    margin: 0px;
+    padding-right: 1%;
+}
+
+.InformationAboutPhotosample {
+    width: 100%;
+}
+
+.InformationAboutPhotosample p {
+    margin-bottom: 10px;
+}
+
+.ButtonShowMoreInformation {
+    height: 0.5px;
+    background-color: rgb(194, 193, 193);
+    display: flex;
+    justify-content: center;
+}
+
+.TheSameProductOniVY {
+    display: grid;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.ALLProductionOfivymodaOnSameProduct {
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+
+}
+
+.ProductionOfivymodaOnSameProduct {}
+
+.ImgOnPoductDetail1 {
+    width: 95%;
+    margin-left: 3%;
+}
+
+.AllImgSaleOnIVYmodaPRODUCT{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.ImgSaleOnIVYmodaPRODUCT{
     
+    width: 90%;
+    display: flex;
+    justify-content: center;
 }

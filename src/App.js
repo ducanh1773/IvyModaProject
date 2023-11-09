@@ -17,8 +17,7 @@ function App() {
 
   return (
     <div>
-      <HomePageIvyModa></HomePageIvyModa>
-      <Routes >
+      <Routes > 
         <Route path='/' element={<HomePageIvyModa></HomePageIvyModa>}></Route>
         <Route path='*' element={<HomePageIvyModa></HomePageIvyModa>}></Route>
         <Route path='/DanhMuc/HangNumoive' element={<OptionProduct></OptionProduct>}></Route>
