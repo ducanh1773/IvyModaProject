@@ -20,6 +20,7 @@ import LifeStyePage from "../src/ComponentIvyModa/LifeStylePage";
 import UserPage from "../src/ComponentIvyModa/UserPage";
 import Inputfile from "../src/ComponentIvyModa/UserPage/aixosFile/inputfile.js"
 import Session1 from "../src/ComponentSession/ComponentSesion1/Session1.js"
+import ComponentsSessionSecond from "../src/ComponentSession/ComponentSession2/index.js"
 
 
 
@@ -27,8 +28,9 @@ function App() {
 
   return (
     <div>
-      <Session1></Session1>
-   
+      {/* <Session1></Session1> */}
+
+      <ComponentsSessionSecond></ComponentsSessionSecond>
     </div>
   )
 }

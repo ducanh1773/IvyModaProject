@@ -42,7 +42,7 @@ function Session1() {
                         </div>
                     </div><div className="OptionOnYoga">
                         <div className="AllimgOnOptionoga">
-                            <img src="https://tse4.mm.bing.net/th?id=OIP.PSX5MzxWE_OE8JeR639GSwHaE7&pid=Api&P=0&h=220" className="ImgOnOptionyoga"></img>
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.rGIqS3UbmUrXf71jsWqJvwHaE8&pid=Api&P=0&h=220" className="ImgOnOptionyoga"></img>
                         </div>
                         <div className="AllInformationOnOptionYoga">
                             <h4 className="HeaderInOptionInyoga">Vinyasa flow yoga</h4>
@@ -98,7 +98,7 @@ function Session1() {
                     </div>
                     <div className="OptionOnYoga">
                         <div className="AllimgOnOptionoga">
-                            <img src="https://tse4.mm.bing.net/th?id=OIP.PSX5MzxWE_OE8JeR639GSwHaE7&pid=Api&P=0&h=220" className="ImgOnOptionyoga"></img>
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.rGIqS3UbmUrXf71jsWqJvwHaE8&pid=Api&P=0&h=220" className="ImgOnOptionyoga"></img>
                         </div>
                         <div className="AllInformationOnOptionYoga">
                             <h4 className="HeaderInOptionInyoga">Vinyasa flow yoga</h4>

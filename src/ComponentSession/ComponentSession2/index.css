@@ -1,0 +1,213 @@
+@media only screen and (min-width:320px) and (max-width:1023px) {
+    .HeaderOfFloral {
+        margin-left: 40%;
+    }
+
+    .AllpageFloral {}
+
+    .AlinformationInFloral {
+        display: grid;
+        margin-left: 10%;
+
+
+    }
+
+    .AllImgOnFloral {
+        width: 100%;
+    }
+
+    .AllImgOnFloral img {
+        width: 90%;
+        height: 250px;
+    }
+
+    .AllOptionOfFloral {
+        width: 90%;
+    }
+
+    .AllOptionOfFloral p {
+        font-size: 12px;
+    }
+
+    .MainLeftSession {
+        margin-left: 15%;
+        width: 80%;
+        margin-right: 10%;
+        margin-top: 5%;
+    }
+
+    .OptionOfFloral h3 {
+        margin: 0px;
+        font-size: 16px;
+        font-weight: 200;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 90%;
+
+    }
+
+    .OptionOfFloral box-icon {
+        padding-left: 1%;
+    }
+
+
+
+    .OptionOfFloral {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .ImgMainRightFloral {
+        width: 75%;
+        height: 550px;
+    }
+
+    .MainRightSession2{
+        margin-left: 15%;
+        margin-top: 4%;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width:1024px) and (max-width:1440px) {
+    .HeaderOfFloral {
+        margin-left: 40%;
+    }
+
+    .AllpageFloral {}
+
+    .AlinformationInFloral {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        margin-left: 10%;
+
+
+    }
+
+    .AllImgOnFloral {
+        width: 100%;
+    }
+
+    .AllImgOnFloral img {
+        width: 90%;
+        height: 250px;
+    }
+
+    .AllOptionOfFloral {
+        width: 90%;
+    }
+
+    .AllOptionOfFloral p {
+        font-size: 12px;
+    }
+
+    .MainLeftSession {
+        margin-left: 15%;
+        width: 80%;
+        margin-right: 10%;
+        margin-top: 5%;
+    }
+
+    .OptionOfFloral h3 {
+        margin: 0px;
+        font-size: 16px;
+        font-weight: 200;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 90%;
+
+    }
+
+    .OptionOfFloral box-icon {
+        padding-left: 1%;
+    }
+
+
+
+    .OptionOfFloral {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .ImgMainRightFloral {
+        width: 75%;
+        height: 550px;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width:1441px) and (max-width:2560px) {
+    .HeaderOfFloral {
+        margin-left: 40%;
+    }
+
+    .AllpageFloral {}
+
+    .AlinformationInFloral {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        margin-left: 10%;
+
+
+    }
+
+    .AllImgOnFloral {
+        width: 100%;
+    }
+
+    .AllImgOnFloral img {
+        width: 90%;
+        height: 250px;
+    }
+
+    .AllOptionOfFloral {
+        width: 90%;
+    }
+
+    .AllOptionOfFloral p {
+        font-size: 12px;
+    }
+
+    .MainLeftSession {
+        margin-left: 15%;
+        width: 80%;
+        margin-right: 10%;
+        margin-top: 5%;
+    }
+
+    .OptionOfFloral h3 {
+        margin: 0px;
+        font-size: 16px;
+        font-weight: 200;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 90%;
+
+    }
+
+    .OptionOfFloral box-icon {
+        padding-left: 1%;
+    }
+
+
+
+    .OptionOfFloral {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .ImgMainRightFloral {
+        width: 75%;
+        height: 550px;
+    }
+
+
+
+
+}
