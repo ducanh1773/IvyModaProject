@@ -1,0 +1,141 @@
+.AllFormsigin_Ivymoda{
+    display: flex;
+    padding-left: 10%;
+    padding-top: 5%;
+    margin-bottom: 3%;
+}
+
+.MainLeftSiginIVY{
+    width: 45%;
+    display: grid;
+    justify-content: center;
+}
+
+.MainLeftSiginIVY h2{
+    display: grid;
+    justify-content: center;
+}
+
+.MainLeftSiginIVY p{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 1%;
+    color: rgb(197, 197, 197);
+}
+
+.formSignInIVY{
+    display: grid;
+    height: 70%;
+}
+
+.signinEmail{
+    width: 80%;
+    margin-left: 7%;
+    height: 70%;
+    margin-top: 10%;
+    border: 4px solid rgb(233, 233, 233);
+    padding-left: 3%;
+    
+}
+
+.signinEmail:focus{
+   border: 4px solid #84b9f1;
+   outline: none;
+   border-radius: 5px;
+}
+
+.signinPassword{
+    width: 80%;
+    margin-left: 7%;
+    margin-top: 10%;
+    height: 70%;
+    border: 4px solid rgb(233, 233, 233);
+    padding-left: 3%;
+}
+
+.signinPassword:focus{
+    border: 4px solid #84b9f1;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+
+
+.AllRememberPasswordIVY{
+    margin-top: 10%;
+    margin-left: 6%;
+    
+}
+.RememberPasswordIVY{
+    display: flex;
+    
+}
+
+.RememberPasswordIVY p{
+    margin: 0px;
+    margin-left: 3%;
+}
+
+.SetupPasswordAgainAndmoreSignIn{
+    display: flex;
+    margin-left: 6%;
+    width: 100%;
+    margin-bottom: 10%;
+    margin-top: 3%;
+}
+
+.SetupPasswordAgainAndmoreSignIn p{
+    text-decoration: underline;
+    color: rgb(139, 139, 139);
+    
+   
+}
+
+.SetupPasswordAgainAndmoreSignIn a{
+    margin-right: 25%;
+    
+}
+
+.ButtonForSignInIvyMODA button{
+    width: 85%;
+    height:50px;
+    cursor: pointer;
+    border: 1px solid rgb(24, 24, 24) ;
+    border-radius: 12px 0px 12px 0px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: black;
+
+}
+
+.ButtonForSignInIvyMODA button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+
+.ButtonForSignInIvyMODA{
+    width: 100%;
+    margin-left: 7%;
+    
+}
+
+.AllNewsCustomerForsignUp{
+    width: 40%;
+    margin-left: 5%;
+
+
+}
+
+.MainRightSiginIVY{
+    height: max-content;
+    
+    border-left: 1px solid rgb(207, 207, 207);
+}
+
+.InformationInMainRightSiginIVY{
+    margin-bottom: 5%;
+}

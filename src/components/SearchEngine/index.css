@@ -1,44 +1,65 @@
-.bt_sg:hover{
-    background-color: rgba(0,0,0,0.6);;
-}
-.bt_sg{
-    border-top-left-radius:3px;
-    border-top-right-radius:3px;
-}
+@media only screen and (min-width:1440px) {
+  .bt_sg:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    ;
+  }
 
-.bt_sg:after{
-    background-color:rgba(0,0,0,0.6);
-}
-.searchEngine{
+  .bt_sg {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  .bt_sg:after {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .option_sg{
+    width: 30%;
+  }
+
+  .bt_sg {
+    width: 70%;
+    height: 38px;
+    border: none;
+    background-color: white;
+  }
+
+  .bt_sg:hover {
+    background-color: hsl(0, 4%, 44%);
+    color: white;
+  }
+
+  .searchEngine {
     padding-left: 8%;
-    display: flex;
+    width: 100%;
     float: left;
     align-items: left;
     justify-content: left;
     text-align: left;
-}
+  }
 
-
-.bt_sg_3{
-    padding-left: 42px;
-    
-}
-
-.active{
-  background-color: rgba(0,0,0,0.6);
-  color: white;
-}
+  .OptionSGButton {
+    display: flex;
+    width: 100%;
+  }
 
 
 
+  .active {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
 
 
 
-.dropdown {
+
+
+
+  .dropdown {
     position: relative;
     display: inline-block;
   }
-  
+
   .btn {
     background-color: #4CAF50;
     color: white;
@@ -47,28 +68,14 @@
     border: none;
     cursor: pointer;
   }
-  
+
   .dropdown-content {
     display: none;
-  }  
-
-  .sg_dr{
-    position: absolute;
-    z-index: 1;
   }
 
-
-  @media only screen and (min-width: 768px) and (max-width: 1024px){
-   
-
-    
-   
-    
 }
 
-@media screen and (min-width : 360px) and (max-width:540px)
 
-{
-  
-}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
 
+@media screen and (min-width : 360px) and (max-width:540px) {}

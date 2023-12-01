@@ -1,25 +1,16 @@
 
 
 
-.headerOutstanding2{
-    font-size: 10px;
-    color: rgb(197, 52, 52);
-    text-decoration: none;
-    padding-right: 5px;
-}
 
 
 @media screen and (min-width:1440px) and (max-width:1920px) {
-    .headerOutstanding{
-        padding-left: 1000px;
-        display: flex;
-        align-items: center;
+    .AllInformationInOutstanding{
+        
     }
-
+   
     .headerOutstanding1 {
         font-size: 24px;
-        width: 2000px;
-        padding-right: 1000px;
+       
     }
     .main_oustanding{
         display: flex;
@@ -27,7 +18,7 @@
     }
 
     .headerOutstanding1{
-        width: 2000px;
+        
     }
 
     .headerOutstanding3{
@@ -49,10 +40,13 @@
        
     }
     .main_oustanding{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(4,auto);
        
        
     }
+
+    
 
 
 

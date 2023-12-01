@@ -1,0 +1,18 @@
+.AllIntroducePage{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.AllImgfromIntroducePage{
+    width: 100%;
+    margin-top: 2%;
+    display: grid;
+    justify-content: center;
+    
+}
+.ImgfromIntroducePage{
+    width: 90%;
+    margin-left: 5%;
+    
+}

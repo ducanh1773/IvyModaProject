@@ -4,8 +4,7 @@
     }
 
     .NewsBDSOnMain {
-        padding-top: 20%;
-        padding-bottom: 200px;
+      margin-top: 20%;
     }
 
     .main_nvbar {
@@ -168,10 +167,6 @@
     }
 
 
-    .n123 {
-        left: -91px;
-        position: absolute;
-    }
 
     .SPClientOnMain {
         padding-left: 0;
@@ -224,11 +219,6 @@
         margin-bottom: 5%;
     }
 
-    .NewsBDSOnMain {
-        padding-top: 200px;
-        padding-bottom: 84px;
-
-    }
 
     .News_BDS_2 {
         display: flex;
@@ -304,12 +294,6 @@
         width: 477px;
     }
 
-    .TinNB {
-        height: 376px;
-        align-items: center;
-        justify-content: center;
-        padding-left: 168px;
-    }
 
     
     .Subject_News{
@@ -317,17 +301,9 @@
         font-weight: 600;
     }
 
-    .Page_NewsMain {
-        padding-left: -49px;
-    }
 
 
 
-    .openMore {
-
-        width: 100%;
-
-    }
 
     .main_oustanding{
         display: grid;
@@ -363,11 +339,21 @@
 
 
 @media screen and (min-width : 1440px) and (max-width:1919px) {
+   .MainBDSFYOnHomePageBDS{
+    position:relative;
+   }
     .headerOutstanding {
         padding-left: 116px;
 
     }
 
+    .SearchEngineOnMain{
+        margin-bottom: 15%;
+    }
+
+    .NewsBDSOnMain{
+        margin-bottom: 10%;
+    }
     .main_oustanding {
         display: flex;
         width: 100%;
@@ -420,10 +406,6 @@
     }
 
 
-    .n123 {
-        left: -91px !important;
-        position: absolute;
-    }
 
     .SPClientOnMain {
         padding-left: 7%;
@@ -475,27 +457,7 @@
         grid-template-columns: auto auto auto auto;
     }
 
-    .NewsBDSOnMain {
-        padding-top: 200px;
-        padding-bottom: 84px;
 
-    }
-
-    .News_BDS_2 {
-        display: flex;
-        padding-left: 23px;
-        width: 848px;
-        height: 55px;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .TinNB {
-        height: 376px;
-        align-items: center;
-        justify-content: center;
-        padding-left: 168px;
-    }
 
     .Page_NewsMain {
         padding-left: -49px;
@@ -599,20 +561,7 @@
         margin-bottom: 5%;
     }
 
-    .NewsBDSOnMain {
-        padding-top: 200px;
-        padding-bottom: 84px;
 
-    }
-
-    .News_BDS_2 {
-        display: flex;
-        padding-left: 23px;
-        width: 1129px;
-        height: 55px;
-        text-align: center;
-        padding-left: 9%;
-    }
 
     .News_bds {
         border: none;
@@ -620,17 +569,6 @@
         font-size: 24px;
     }
 
-    .Tin_nổi_bật {
-        padding-left: 200px;
-    }
-
-    .LinkSubjectNews {
-        font-size: 20px;
-        text-decoration: none;
-        color: black;
-        text-transform: capitalize;
-        width: 477px;
-    }
 
 
     .News_bds_3:after {
@@ -666,25 +604,8 @@
         cursor: pointer;
     }
 
-    .next_news {
-        color: red;
-        background-color: white;
-        border: none;
-        padding-left: 500px;
-    }
 
-    .n456 {
-        padding-left: 650px;
-        font-size: 20px;
-        width: 477px;
-    }
 
-    .TinNB {
-        height: 376px;
-        align-items: center;
-        justify-content: center;
-        padding-left: 168px;
-    }
 
 
 
@@ -700,4 +621,8 @@
         display: flex;
         justify-content: center;
     }
+}
+
+@media only screen and (min-width:360px) and (max-width:479px) {
+    
 }

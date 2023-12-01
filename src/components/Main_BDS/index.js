@@ -18,18 +18,18 @@ function Main_Page_BDS(){
             <div className="HeaderOnMainBatDongSan">
             <Header></Header>
             </div>
-            <div>
+            <div className="SearchEngineOnMain">
                 <SearchEngine></SearchEngine>
             </div>
             <div className="NewsBDSOnMain">
                 <News_BDS_Main></News_BDS_Main>
             </div>
-            <div>
+            <div className="MainBDSFYOnHomePageBDS">
                 <BDSFY></BDSFY>
             </div>
-            <div>
+            {/* <div>
                 <Main_Oustanding></Main_Oustanding>
-            </div>
+            </div> */}
             <div>
                 < BDS_DD_Main></ BDS_DD_Main>
             </div>

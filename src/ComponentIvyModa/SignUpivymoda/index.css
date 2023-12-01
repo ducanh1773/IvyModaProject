@@ -1,0 +1,77 @@
+.HeaderPageIVYMODA{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    
+}
+.HeaderPageIVYMODA h2{
+    font-weight: 500;
+}
+
+.AllMainSighUpIVYMODA{
+    display: flex;
+    width: 95%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    
+}
+
+.MainLeftSignUpivymoda{
+    display: grid;
+    width: 50%;
+}
+
+.AllInputInformationIvymodaSignup{
+    display: flex;
+    
+}
+
+.InformationIvymodaSignup{
+    width: 100%;
+}
+
+.InformationIvymodaSignup input{
+    width:85%;
+    height: 40px;
+    padding-left: 3%;
+}
+
+.InformationIvymodaSignup select{
+    width: 90%;
+    height: 40px;
+    padding-left: 3%;
+
+}
+
+.MainRightSignUpIvymoda{
+    width: 40%;
+}
+
+.InputPassWordSignUpIVYMODA{
+    width: 100%;
+}
+
+.InputPassWordSignUpIVYMODA input{
+    width: 90%;
+    height: 40px;
+    padding-left: 3%;
+}
+
+.ButtonForSignInIvyMODA{
+    margin-left: 2%;
+}
+
+.AccesLicenseIVYmoda{
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    align-items: center;
+    width: 100%;
+}
+
+.AccesLicenseIVYmoda p{
+    margin: 0px;
+
+   
+}

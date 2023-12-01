@@ -1,5 +1,57 @@
-@media screen and(min-width:1920px) {
+@media only screen and (min-width:1339px) {
+   .News_1{
+    display: flex;
+    width: 100%;
+   }
+
+   .n123{
+    width: 40%;
+    margin-left: 7%;
+    margin-top: 2%;
+    
+    
+   }
+
+   .News_Right{
+ 
+    margin-top: 4%;
+   }
    
+
+
+   
+   .n456{
+    width: 30%;
+    margin-left: 5%;
+    font-weight: 600;
+    font-size:20px ;
+   
+    
+   }
+
+   
+   .LinkSubjectNews {
+       font-size: 20px;
+       text-decoration: none;
+       color: black;
+       text-transform: capitalize;
+       width: 20%;
+       
+
+   }
+   .Subject_News{
+    width: 90%;
+    margin: 0px;
+    
+    height: max-content;
+    font-size:20px ;
+    font-weight: 600;
+   
+   }
+
+   .All_page_news{
+    display: flex;
+   }
     
    
 

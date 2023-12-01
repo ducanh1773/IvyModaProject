@@ -13,16 +13,28 @@
     width: 90%;
 }
 
-@media only screen and (min-width : 1000px) {
+@media only screen and (min-width : 1440px) {
+    
+  .sg_dr {
+    position: absolute;
+    z-index: 1;
+    width: 90%;
+  }
     .backgr_search {
         background-color: rgba(0, 0, 0, 0.6);
-        width: 100%;
+        width: 70%;
         height: 96px;
         padding: 16px;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 7px;
         border-top-left-radius: 0;
     }
+    .bt_sg_3{
+        width: 102%;
+    }
+
+    
+
 
     .nava_search_2 {
         display: flex;
@@ -62,7 +74,7 @@
 
     .bt_sg_2 {
 
-        width: 96.172px;
+        width: 100%;
         height: 33px;
         background: #E03C31;
         color: white;
@@ -96,7 +108,7 @@
     .option_123 {
         display: flex;
         border: 1px solid white;
-        width: 208px;
+        width: 100%;
         height: 38px;
         text-align: center;
         justify-content: center;
@@ -107,7 +119,7 @@
     .bt_sg-1 {
         background-color: transparent;
         display: flex;
-        width: 90%;
+        width: 100%;
         height: 38px;
         padding-left: 1px;
         padding-right: 26;
@@ -133,6 +145,7 @@
 
     .option_sg_padding {
         padding-right: 12px;
+        width: 30%;
 
     }
 
@@ -180,6 +193,7 @@
         display: flex;
         width: 100%;
         height: 48px;
+        margin-bottom: 4%;
     }
 
     .nava_search {
@@ -315,7 +329,7 @@
 
     }
 
-    .All_option1{
+    .All_option1 {
         background-color: white;
     }
 }
@@ -472,7 +486,7 @@
 
     }
 
-    .All_option1{
+    .All_option1 {
         background-color: white;
     }
 }

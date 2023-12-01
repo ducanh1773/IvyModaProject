@@ -40,8 +40,8 @@ function All_News_BDS() {
         setHoveredElement4(null)
         setHoveredElement5(null)
         setHoveredElement2(true);
-    }; 
-    
+    };
+
     const handleMouseEnter3 = () => {
         setHoveredElement2(null)
         setHoveredElement4(null)
@@ -80,50 +80,44 @@ function All_News_BDS() {
         setHoveredElement5(null);
     };
 
- 
+
 
     return (
         <div className="All_page_news">
             <div className="News_1">
                 <div className="n123">
-
                     {hoveredElement && (
-                        <div>
-                            <News_BDS_1 News={News_1}></News_BDS_1>
-                        </div>
+
+                        <News_BDS_1 News={News_1}></News_BDS_1>
+
                     )}
                     {hoveredElement1 && (
-                        <div>
-                            <News_BDS_1 News={News_2}></News_BDS_1>
-                        </div>
+
+                        <News_BDS_1 News={News_2}></News_BDS_1>
+
 
                     )}
 
                     {hoveredElement2 && (
-                        <div>
-                            <News_BDS_1 News={News_3}></News_BDS_1>
-                        </div>
+
+                        <News_BDS_1 News={News_3}></News_BDS_1>
+
                     )}
                     {hoveredElement3 && (
-                        <div>
-                            <News_BDS_1 News={News_4}></News_BDS_1>
-                        </div>
+
+                        <News_BDS_1 News={News_4}></News_BDS_1>
+
                     )}
                     {hoveredElement4 && (
-                        <div>
-                            <News_BDS_1 News={News_5}></News_BDS_1>
-                        </div>
+
+                        <News_BDS_1 News={News_5}></News_BDS_1>
+
                     )}
                     {hoveredElement5 && (
-                        <div>
-                            <News_BDS_1 News={News_6}></News_BDS_1>
-                        </div>
+
+                        <News_BDS_1 News={News_6}></News_BDS_1>
+
                     )}
-
-
-
-
-
                 </div>
 
                 <div className="n456">

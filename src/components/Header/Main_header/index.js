@@ -85,7 +85,7 @@ function Header() {
         <div className="main_nvbar_2">
             <div className="main_nvbar">
                 <div className="main_left" >
-                    <Link to="/" className="img_12" style={{cursor:'pointer'}}><img src='https://batdongsan.com.vn/sellernet/static/media/header-logo-sisu.4b76e0ce.svg' className="logo_main"></img><br></br></Link>
+                    <Link  to="/" className="img_12" style={{cursor:'pointer'}} ><img src='https://batdongsan.com.vn/sellernet/static/media/header-logo-sisu.4b76e0ce.svg' className="logo_main"></img><br></br></Link>
                     <Link to='/nha_dat_ban' style={{textDecoration:'none'}}><Header_2 name='Nhà đất bán' NVB={NVB1} className='nv1'></Header_2></Link>
                     <Link to='/nha_dat_ban' style={{textDecoration:'none'}}><Header_2 name='Nhà đất cho thuê' NVB={NVB2} className='nv2'></Header_2></Link>
                     <Link to='/duan' style={{textDecoration:'none'}}><Header_2 name='Dự án' NVB={NVB3}></Header_2></Link>

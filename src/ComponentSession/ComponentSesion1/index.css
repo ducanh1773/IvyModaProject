@@ -1,0 +1,110 @@
+.BackGrounPage{
+    background-color:#FFF9F5 ;
+    width: 100%;
+    padding-bottom: 3%;
+    height: 100%;
+    padding-top: 1%;
+
+}
+
+.AllInformationFromSessionFirst {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.HeaderFromSessionFirst {
+    width: 30%;
+}
+
+.HeaderFromSessionFirst h2{
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.AllOptionYoga {
+    width: 100%;
+    display: flex;
+}
+
+
+.AllimgOnOptionoga {
+    width: 100%;
+
+}
+
+.ImgOnOptionyoga {
+    width: 100%;
+}
+
+.OptionOnYoga {
+    width: 50%;
+    margin-right: 2%;
+}
+
+.PriceOnYoga {
+    display: flex;
+    align-items: center;
+
+}
+
+.HeaderInOptionInyoga {
+    margin: 0px;
+    font-weight: 400;
+   
+}
+
+.AllInformationOnOptionYoga {
+    margin-top: 2%;
+}
+
+
+.FirstPriceOnYoga {
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-right: 5%;
+    font-weight: 200;
+    margin-top: 0%;
+}
+
+.SalePriceOnYoga {
+    font-weight: 400;
+    margin-top: 0%;
+    font-size: 13px;
+}
+
+.AllInFormationTrainingOnWeek {
+
+    width: 100%;
+}
+
+
+.BorderInFormationTrainingOnWeek {
+    border-top: 1px solid rgb(226, 225, 225);
+    display: grid;
+    grid-template-columns: 20% 70%;
+    width: 100%;
+    align-items: center;
+   
+}
+
+.InFormationTrainingOnWeek{
+    font-size: 12px;
+    margin-left: 15%;
+    
+}
+
+.OptionWeekTraining{
+   font-size: 12px;
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+   
+    
+}
+
+.LastBorderInFormationTrainingOnWeek{
+    border-bottom: 1px solid rgb(226, 225, 225);
+}

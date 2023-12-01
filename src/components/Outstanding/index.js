@@ -5,7 +5,7 @@ import './index.css'
 function Main_Oustanding() {
     const OS1 = [{ ImgURL: 'https://file4.batdongsan.com.vn/crop/393x222/2023/08/09/20230809115513-b004_wm.jpg', Status: 'Đang mở bán- 25/6/2023 : Mở bán', number: '5', link: 'https://batdongsan.com.vn/du-an-can-ho-chung-cu-thu-dau-mot-bd/the-maison-pj5449', location: 'Thủ Dầu Một - Bình Dương ', name: 'The Maison', acreage: '5.607,4 m' }]
     return (
-        <div>
+        <div className="AllInformationInOutstanding">
             <div className="headerOutstanding">
                 <div>
                     <h1 className="headerOutstanding1">Dự án bất động sản nổi bật</h1>

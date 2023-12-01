@@ -6,7 +6,7 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css'; // optional
 
 function SearchEngine() {
-    
+
 
     const [showComponent, setshowComponet] = useState(true)
     const [showDropdown2, setShowDropdown2] = useState(false);
@@ -19,31 +19,31 @@ function SearchEngine() {
             setshowComponet(!showComponent);
             setShowDropdown2(false)
             setShowDropdown3(false)
-          
-         
+
+
         }
     }
 
     const handleClick2 = () => {
         if (showComponent === false && showDropdown3 === false) {
             showDropdown2 = true
-           
+
         }
         setShowDropdown2(!showDropdown2);
         setshowComponet(false)
         setShowDropdown3(false)
-        
+
     }
 
     const handleClick3 = () => {
         if (showComponent === false && showDropdown2 === false) {
             showDropdown3 = true
-            
+
         } else {
             setShowDropdown3(!showDropdown3)
             setShowDropdown2(false);
             setshowComponet(false)
-            
+
         }
     }
 
@@ -54,15 +54,22 @@ function SearchEngine() {
     return (
 
         <div className="searchEngine">
-            
+
             <div className="option_sg">
-                <button className={"bt_sg" + (showComponent ? ' active ' : "")} onClick={handleClick}>Nhà đất bán</button>
+                <div className="OptionSGButton">
+                    <button className={"bt_sg" + (showComponent ? ' active ' : "")} onClick={handleClick}>Nhà đất bán</button>
+                    <button className={"bt_sg" + (showDropdown2 ? ' active ' : "")} onClick={handleClick2} >Nhà đất cho thuê</button>
+                    <button className={"bt_sg" + (showDropdown3 ? ' active ' : "")} onClick={handleClick3}>Dự án</button>
+                </div>
+
+            </div>
+            <div>
                 {showComponent && (
                     <div className="sg_dr">
                         <SearchEngine_2></SearchEngine_2>
                     </div>
                 )}
-                <button className={"bt_sg" + (showDropdown2 ? ' active ' : "")} onClick={handleClick2} >Nhà đất cho thuê</button>
+
                 {
                     showDropdown2 && (
                         <div className="sg_dr">
@@ -70,7 +77,7 @@ function SearchEngine() {
                         </div>
                     )
                 }
-                <button className={"bt_sg" + (showDropdown3 ? ' active ' : "")} onClick={handleClick3}>Dự án</button>
+
                 {
                     showDropdown3 && (
                         <div className="sg_dr">
@@ -79,7 +86,6 @@ function SearchEngine() {
                     )
                 }
             </div>
-
 
 
         </div>

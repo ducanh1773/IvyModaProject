@@ -1,0 +1,32 @@
+.MainLifeStlePage{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.AllSubjectLifeSTLE{
+    
+   
+    margin-left: 40%;
+    margin-top:1% ;
+}
+
+.SubjectLifeSTLE{
+    font-size: 70px;
+    font-weight: 600;
+
+}
+
+.AllOptionLifeStye{
+    display: flex;
+    margin-left: 20%;
+    margin-bottom: 2%;
+    
+}
+
+.AllOptionLifeStye h2{
+    margin-right: 7%;
+    cursor: pointer;
+    font-weight:300 ;
+    margin-top: 0px;
+}

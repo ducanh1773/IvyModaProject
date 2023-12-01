@@ -1,8 +1,8 @@
-@media screen and (max-width : 1920px) and (min-width:1000px) {
+@media screen and (max-width : 1920px) and (min-width:1440px) {
     .search_bds_da_3 {
         background-color: rgba(0,0,0,0.6);
         height: 96px;
-        width: 100%;
+        width: 80%;
         padding: 16px;
         box-shadow: 0 4px 4px rgba(0,0,0,0.25);
         border-radius: 7px  ;
@@ -34,13 +34,14 @@
     }
     
     .search_da_bds_3 {
-        padding-right: 28px;
+        padding-right: 5%;
+        width: 75%;
     }
     
     .search_da_bds {
         display: flex;
         height: 48px;
-        width: 744px;
+      width: 80%;
         align-items: center;
         justify-content: center;
         background-color: white;
@@ -62,7 +63,7 @@
     }
     
     .btn-da {
-        width: 96.172px;
+        width: 15%;
         height: 33px;
         background: #E03C31;
         color: white;
@@ -81,7 +82,7 @@
     }
     
     .search_da_bds_2 {
-        width: 601px;
+        width: 90%;
         height: 20px;
         outline: none;
         border: none;
@@ -92,20 +93,21 @@
     .option_bds_da{
         display: flex;
         padding-top: 10px;
+        width: 100%;
         
     }
     
     .option_da_bds{
         display: flex;
         border: solid 1px white;
-        width: 276px;
+        width: 100%;
         height: 40px;
         padding-right: 10px;
         border-radius: 5px;
     }
     
     .option_da_bds-2{
-        width: 276px;
+        width: 100%;
         height: 40px;
         background-color: transparent;
         display: flex;
@@ -120,6 +122,8 @@
     
     .option_da_bds-3{
         padding-right: 10px;
+        width: 30%;
+        margin-right: 3%;
     }
     
     .icon_bds_da{
@@ -145,7 +149,7 @@
     .search_bds_da_3 {
         background-color: rgba(0,0,0,0.6);
         height: 145px;
-        width: 66%;
+        width: 60%;
         padding: 16px;
         box-shadow: 0 4px 4px rgba(0,0,0,0.25);
         border-radius: 7px  ;
@@ -177,7 +181,7 @@
     }
     
     .search_da_bds_3 {
-        padding-right: 28px;
+        width: 90%;
     }
     
     .search_da_bds {

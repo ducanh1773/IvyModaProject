@@ -46,7 +46,7 @@ function BDSFY_2() {
             <div className="openMore">
                 {hideOpenmore && (<button className="openMore_1" onClick={handleClick}>Mở rộng</button>)}
                 {showComponent && (
-                    <div>
+                    <div className="AllOpenmoreBDFY">
                         <div className="bdsfy_side1">
                             <BDSFY_1 information={FY1}></BDSFY_1>
                             <BDSFY_1 information={FY2}></BDSFY_1>

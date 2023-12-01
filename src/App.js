@@ -13,17 +13,22 @@ import OptionProduct from "../src/ComponentIvyModa/ProductPortfolio"
 import HomePageIvyModa from "../src/ComponentIvyModa/HomePageIVYModa"
 import DelicateurbanForWomanProduct from "../src/ComponentIvyModa/ProductPortfolio/DelicateUrbanForWomanIvy"
 import ProductDetail from "../src/ComponentIvyModa/ProductDetail"
+import SigninIVYmoda from "../src/ComponentIvyModa/SignInIVYMODA"
+import SignUpIvymoda from "../src/ComponentIvyModa/SignUpivymoda"
+import IntroduceOfivyPage from "../src/ComponentIvyModa/IntroduceOfIvymodaPage";
+import LifeStyePage from "../src/ComponentIvyModa/LifeStylePage";
+import UserPage from "../src/ComponentIvyModa/UserPage";
+import Inputfile from "../src/ComponentIvyModa/UserPage/aixosFile/inputfile.js"
+import Session1 from "../src/ComponentSession/ComponentSesion1/Session1.js"
+
+
+
 function App() {
 
   return (
     <div>
-      <Routes > 
-        <Route path='/' element={<HomePageIvyModa></HomePageIvyModa>}></Route>
-        <Route path='*' element={<HomePageIvyModa></HomePageIvyModa>}></Route>
-        <Route path='/DanhMuc/HangNumoive' element={<OptionProduct></OptionProduct>}></Route>
-        <Route path='/DanhMuc/DELICATEURBAN' element={<DelicateurbanForWomanProduct></DelicateurbanForWomanProduct>}></Route>
-        <Route path='/Chitietsanpham' element={<ProductDetail></ProductDetail>}></Route>
-      </Routes>
+      <Session1></Session1>
+   
     </div>
   )
 }

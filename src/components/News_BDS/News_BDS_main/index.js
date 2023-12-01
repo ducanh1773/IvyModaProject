@@ -53,7 +53,7 @@ function News_BDS_Main() {
                 <div className="News_bds_3"><button className="News_bds" onClick={hanldelClick2}>Tin tức</button></div>
                 <div className="News_bds_3"><button className="News_bds" onClick={hanldelClick3}>BĐS TPHCM</button></div>
                 <div className="News_bds_3"><button className="News_bds" onClick={hanldelClick4}>BĐS Hà Nội</button></div>
-                <div className="News_BDS_3"><button className="next_news" >Xem thêm<i className="fa fa-arrow-right"></i></button></div>
+                <div className="News_BDS_3_newsnext"><button className="next_news" >Xem thêm<i className="fa fa-arrow-right"></i></button></div>
             </div>
             <div>
 
