@@ -1,0 +1,23 @@
+.signUpPage{
+    display:grid;
+    justify-content: center;
+}
+
+.SubmitInSignUp{
+   width: 98%;
+    background-color: aquamarine;
+    height: 10%;
+    border-radius: 7px;
+    
+}
+
+.SubmitInSignUp:hover{
+    background-color: rgb(39, 230, 166);
+}
+
+.InformationInput{
+    width: 95%;
+    height: 7%;
+    border-radius: 7px;
+    padding-left: 2%;
+}

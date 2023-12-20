@@ -19,8 +19,6 @@ import IntroduceOfivyPage from "../src/ComponentIvyModa/IntroduceOfIvymodaPage";
 import LifeStyePage from "../src/ComponentIvyModa/LifeStylePage";
 import UserPage from "../src/ComponentIvyModa/UserPage";
 import Inputfile from "../src/ComponentIvyModa/UserPage/aixosFile/inputfile.js"
-import Session1 from "../src/ComponentSession/ComponentSesion1/Session1.js"
-import ComponentsSessionSecond from "../src/ComponentSession/ComponentSession2/index.js"
 
 
 
@@ -28,9 +26,20 @@ function App() {
 
   return (
     <div>
-      {/* <Session1></Session1> */}
+      <Routes>
+        <Route path='/' element={<HomePageIvyModa></HomePageIvyModa>}></Route>
+        <Route path='*' element={<HomePageIvyModa></HomePageIvyModa>}></Route>
+        <Route path='/LifestyyleIVYMODA' element={<LifeStyePage></LifeStyePage>}></Route>
+        <Route path='/DangnhapIVYMODA' element={<SigninIVYmoda></SigninIVYmoda>}></Route>
+        <Route path='/DanhMuc/HangNumoive' element={<OptionProduct></OptionProduct>}></Route>
+        <Route path='/DanhMuc/DELICATEURBAN' element={<DelicateurbanForWomanProduct></DelicateurbanForWomanProduct>}></Route>
+        <Route path='/DangKyIvyMODA' element={<SignUpIvymoda></SignUpIvymoda>}></Route>
+        <Route path='//GioithieuIvymoda' element={<IntroduceOfivyPage></IntroduceOfivyPage>}></Route>
+        <Route path='/Chitietsanpham' element={<ProductDetail></ProductDetail>}></Route>
+      </Routes>
 
-      <ComponentsSessionSecond></ComponentsSessionSecond>
+
+
     </div>
   )
 }

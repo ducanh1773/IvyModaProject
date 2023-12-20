@@ -1,23 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import "./index.css"
 import ProductionOfIvy from "../NewArrivalIvyModa/arrivalReuse"
 import '@splidejs/react-splide/css';
+import HeaderIvyMoDa from "../HeaderIvymoda";
+import axios from "axios";
+import { Link, json } from "react-router-dom";
+
+
+
+
 function NewArrivalIvyModa() {
+
+
     // Bang Nu
-    const Production1 = [{
-        ImgUrl1: 'https://pubcdn.ivymoda.com/files/product/thumab/400/2023/10/20/8a2241d4a39c3760bc7d6c9a29d82551.jpg',
-        ColorOfproduction: 'Black', NameOfProduction: 'áo sơ mi lụa cổ đổ', Price: '950.000đ'
-    }]
+    // const Production1 = [{
+    //     ImgUrl1: 'https://pubcdn.ivymoda.com/files/product/thumab/400/2023/10/20/8a2241d4a39c3760bc7d6c9a29d82551.jpg',
+    //     ColorOfproduction: 'Black', NameOfProduction: 'áo sơ mi lụa cổ đổ', Price: '950.000đ'
+    // }]
     const Production4 = [{
         ImgUrl1: 'https://pubcdn.ivymoda.com/files/product/thumab/400/2023/10/23/c4b8e47d2488dff5d0a910520c306f57.jpg',
         ColorOfproduction: 'Black', NameOfProduction: 'áo sơ mi lụa cổ đổ', Price: '950.000đ'
     }]
     //Bang Nam
-    const Production2 = [{
-        ImgUrl1: 'https://pubcdn.ivymoda.com/files/product/thumab/400/2023/09/25/bfe1d5a36dc8d579602626e1fc68281a.jpg',
-        ColorOfproduction: 'Black', NameOfProduction: 'áo sơ mi lụa cổ đổ', Price: '950.000đ'
-    }]
+
     const Production5 = [{
         ImgUrl1: 'https://pubcdn.ivymoda.com/files/product/thumab/400/2023/08/04/71465941684cd1106d7ae510ef940093.JPG',
         ColorOfproduction: 'Black', NameOfProduction: 'áo sơ mi lụa cổ đổ', Price: '950.000đ'
@@ -25,48 +31,28 @@ function NewArrivalIvyModa() {
     //Bang tre em
 
 
-    const Production3 = [{
-        ImgUrl1: 'https://pubcdn.ivymoda.com/files/product/thumab/400/2023/10/12/d4e6d3ce2610d7551a2fcb30449829b9.jpg',
-        ColorOfproduction: 'Black', NameOfProduction: 'áo sơ mi lụa cổ đổ', Price: '950.000đ'
-    }]
-
     const Production6 = [{
         ImgUrl1: 'https://pubcdn.ivymoda.com/files/product/thumab/400/2023/09/13/ed47069ba9a8c1d60033268237201600.jpg',
         ColorOfproduction: 'Black', NameOfProduction: 'áo sơ mi lụa cổ đổ', Price: '950.000đ'
     }]
 
 
+    const [post, setPost] = useState(null);
 
 
 
 
-    const [showElement, setShowelement] = useState(true)
-    const [showElement1, setShowelement1] = useState(false)
-    const [showElement2, setShowelement2] = useState(false)
+
+
+
+
     const [showElement3, setShowelement3] = useState(false)
     const [showElement4, setShowelement4] = useState(true)
     const [showElement5, setShowelement5] = useState(false)
     const [showElement6, setShowelement6] = useState(false)
 
 
-    const handleClick = () => {
-        setShowelement(true)
-        setShowelement1(false)
-        setShowelement2(false)
-    }
 
-
-    const handleClick1 = () => {
-        setShowelement(false)
-        setShowelement1(true)
-        setShowelement2(false)
-    }
-
-    const handleClick2 = () => {
-        setShowelement(false)
-        setShowelement1(false)
-        setShowelement2(true)
-    }
 
     const handleClick3 = () => {
         setShowelement4(false)
@@ -88,6 +74,85 @@ function NewArrivalIvyModa() {
         setShowelement3(false)
     }
 
+    const [idDanhMuc, setIDDanhMuc] = useState(1);
+    const [data, setData] = useState(null);
+    const [idNewCollection, setIdNewCollection] = useState(4);
+    const [dataNewCollection, setDataNewCollection] = useState(null)
+
+
+    useEffect(() => {
+        (
+            async () => {
+                let result = await fetch("https://0e15-117-1-109-1.ngrok-free.app/API/Collectionivymoda/api_collection.php", {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        "ngrok-skip-browser-warning": "69420",
+                    },
+                    method: "POST",
+                    body: JSON.stringify({ id_collection: idDanhMuc }),
+                });
+                result = await result.json();
+                console.log(result)
+                setData(result)
+
+            }
+        )()
+
+    }, [idDanhMuc])
+
+    useEffect(() => {
+        (
+            async () => {
+                let result = await fetch("https://0e15-117-1-109-1.ngrok-free.app/API/Collectionivymoda/api_collection.php", {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        "ngrok-skip-browser-warning": "69420",
+                    },
+                    method: "POST",
+                    body: JSON.stringify({ id_collection: idNewCollection }),
+                });
+                result = await result.json();
+                console.log(result)
+                setDataNewCollection(result)
+
+            }
+        )()
+
+    }, [idNewCollection])
+
+
+
+
+
+
+
+    if (!data) {
+        return null;
+    }
+
+    if (!dataNewCollection) {
+        return null;
+    }
+    const products = data.map(jsonData => {
+        return [
+            {
+                ImgUrl1: jsonData.anh_sanpham,
+                ColorOfproduction: 'Black',
+                NameOfProduction: 'áo sơ mi lụa cổ đổ',
+                Price: '950.000đ'
+            }]
+    })
+
+    const BestSellerProducts = dataNewCollection.map(jsonDataBestSellerColection => {
+        return [{
+            ImgUrl1: jsonDataBestSellerColection.anh_sanpham,
+            ColorOfproduction: 'Black',
+            NameOfProduction: 'áo sơ mi lụa cổ đổ',
+            Price: '950.000đ',
+
+        }]
+    })
+
 
 
 
@@ -96,8 +161,10 @@ function NewArrivalIvyModa() {
     return (
         <div className="AllNewArrivalIvy">
             <div className="AllImgSaleOnIvyModa">
-                <Splide options={{ rewind:'true' , type:'loop' , 
-            padding:{left:'4.5%'}}}>
+                <Splide options={{
+                    rewind: 'true', type: 'loop',
+                    padding: { left: '4.5%' }
+                }}>
                     <SplideSlide>
                         <div className="BorderIvyModa">
                             <img src="https://pubcdn.ivymoda.com/files/news/2023/10/04/ff74da15a8c24facbaeb14418c38360a.jpg" className="ImgSaleOnIvyModa"></img>
@@ -122,42 +189,25 @@ function NewArrivalIvyModa() {
 
             </div>
             <div className="OptionOfArrival">
-                <h2 className="ArrivalForDifferenceObject" onClick={handleClick}>IVY moda</h2>
-                <h2 className="ArrivalForDifferenceObject" onClick={handleClick1}>IVY men</h2>
-                <h2 className="ArrivalForDifferenceObject" onClick={handleClick2}>IVY kids</h2>
+                <h2 className="ArrivalForDifferenceObject" onClick={() => {
+                    setIDDanhMuc(1)
+                }} >IVY moda</h2>
+                <h2 className="ArrivalForDifferenceObject" onClick={() => {
+                    setIDDanhMuc(2)
+                }}>IVY men</h2>
+                <h2 className="ArrivalForDifferenceObject" onClick={() => {
+                    setIDDanhMuc(3)
+                }}>IVY kids</h2>
 
             </div>
             <div>
-                {showElement &&
-                    <div className="ArrivalProductionForWoman">
-                        <ProductionOfIvy ProductionElement={Production1} ></ProductionOfIvy>
-                        <ProductionOfIvy ProductionElement={Production1} ></ProductionOfIvy>
-                        <ProductionOfIvy ProductionElement={Production1} ></ProductionOfIvy>
-                        <ProductionOfIvy ProductionElement={Production1} ></ProductionOfIvy>
-                        <ProductionOfIvy ProductionElement={Production1} ></ProductionOfIvy>
-                    </div>
-                }
-                {showElement1 &&
-                    <div className="ArrivalProductionForWoman">
-                        <ProductionOfIvy ProductionElement={Production2} ></ProductionOfIvy>
-                        <ProductionOfIvy ProductionElement={Production2} ></ProductionOfIvy>
-                        <ProductionOfIvy ProductionElement={Production2} ></ProductionOfIvy>
-                        <ProductionOfIvy ProductionElement={Production2} ></ProductionOfIvy>
-                        <ProductionOfIvy ProductionElement={Production2} ></ProductionOfIvy>
-                    </div>
-                }
-
-                {showElement2 &&
-                    <div className="ArrivalProductionForWoman">
-                        <ProductionOfIvy ProductionElement={Production3} ></ProductionOfIvy>
-                        <ProductionOfIvy ProductionElement={Production3} ></ProductionOfIvy>
-                        <ProductionOfIvy ProductionElement={Production3} ></ProductionOfIvy>
-                        <ProductionOfIvy ProductionElement={Production3} ></ProductionOfIvy>
-                        <ProductionOfIvy ProductionElement={Production3} ></ProductionOfIvy>
-                    </div>
-                }
-
-
+                <div className="ArrivalProductionForWoman">
+                    {products.map(product => {
+                        return (
+                            <Link className="LinktoProductdetail" to="/Chitietsanpham"><ProductionOfIvy ProductionElement={product}></ProductionOfIvy></Link>
+                        )
+                    })}
+                </div>
                 <div className="AllOptionInArrival" href="">
                     <a href="" className="LinkArrvial"><p>Xem tất cả</p></a>
                 </div>
@@ -169,42 +219,24 @@ function NewArrivalIvyModa() {
 
                 </div>
                 <div className="OptionOfArrival">
-                    <h2 className="ArrivalForDifferenceObject" onClick={handleClick3}>IVY moda</h2>
-                    <h2 className="ArrivalForDifferenceObject" onClick={handleClick4}>IVY men</h2>
-                    <h2 className="ArrivalForDifferenceObject" onClick={handleClick5}>IVY kids</h2>
+                    <h2 className="ArrivalForDifferenceObject" onClick={() => { setIdNewCollection(4) }}>IVY moda</h2>
+                    <h2 className="ArrivalForDifferenceObject" onClick={() => { setIdNewCollection(5) }}>IVY men</h2>
+                    <h2 className="ArrivalForDifferenceObject" onClick={() => { setIdNewCollection(6) }}>IVY kids</h2>
 
                 </div>
 
 
                 <div>
-                    {showElement3 &&
-                        <div className="ArrivalProductionForWoman">
-                            <ProductionOfIvy ProductionElement={Production4} ></ProductionOfIvy>
-                            <ProductionOfIvy ProductionElement={Production4} ></ProductionOfIvy>
-                            <ProductionOfIvy ProductionElement={Production4} ></ProductionOfIvy>
-                            <ProductionOfIvy ProductionElement={Production4} ></ProductionOfIvy>
-                            <ProductionOfIvy ProductionElement={Production4} ></ProductionOfIvy>
-                        </div>
-                    }
-                    {showElement4 &&
-                        <div className="ArrivalProductionForWoman">
-                            <ProductionOfIvy ProductionElement={Production5} ></ProductionOfIvy>
-                            <ProductionOfIvy ProductionElement={Production5} ></ProductionOfIvy>
-                            <ProductionOfIvy ProductionElement={Production5} ></ProductionOfIvy>
-                            <ProductionOfIvy ProductionElement={Production5} ></ProductionOfIvy>
-                            <ProductionOfIvy ProductionElement={Production5} ></ProductionOfIvy>
-                        </div>
-                    }
+                    <div className="ArrivalProductionForWoman">
+                        {BestSellerProducts.map(production => {
+                            return (
+                                <Link className="LinktoProductdetail" to="/Chitietsanpham"><ProductionOfIvy ProductionElement={production}></ProductionOfIvy></Link>
 
-                    {showElement5 &&
-                        <div className="ArrivalProductionForWoman">
-                            <ProductionOfIvy ProductionElement={Production6} ></ProductionOfIvy>
-                            <ProductionOfIvy ProductionElement={Production6} ></ProductionOfIvy>
-                            <ProductionOfIvy ProductionElement={Production6} ></ProductionOfIvy>
-                            <ProductionOfIvy ProductionElement={Production6} ></ProductionOfIvy>
-                            <ProductionOfIvy ProductionElement={Production6} ></ProductionOfIvy>
-                        </div>
-                    }
+                            )
+                        })}
+
+                    </div>
+
                 </div>
                 <div className="AllOptionInArrival" href="">
                     <a href="" className="LinkArrvial"><p>Xem tất cả</p></a>

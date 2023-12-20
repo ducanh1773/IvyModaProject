@@ -25,10 +25,9 @@ export default function SignUpIvymoda(props) {
 
 
 
-
     const [formValue, setFormValue] = useState(initFormValue);
     const [formError, setFormError] = useState({});
-
+    
 
     const isEmptyValue = (value) => {
         return !value || value.trim().lenght < 2;
@@ -74,9 +73,10 @@ export default function SignUpIvymoda(props) {
         }
 
         setFormError(error);
-        console.log(error);
-        return Object.keys(error).lenght === 0;
-
+        console.log('123' , error);
+        
+        return Object.keys(error).length === 0;
+        
     }
 
 
@@ -89,48 +89,35 @@ export default function SignUpIvymoda(props) {
         })
     }
 
-    console.log(formError);
-
-
-
-
-
-
     const [post, setPost] = useState(null);
-
+    
     const handleSubmit = (event) => {
         event.preventDefault();
-        // console.log(event.target.elements.familyname.value) // from elements property
-        // console.log(event.target.elements.name.value)
-        // console.log(event.target.elements.familyname.value)
-        // console.log(event.target.elements.email.value)
-        // console.log(event.target.elements.phone.value)
-        // console.log(event.target.elements.year.value)
-        // console.log(event.target.elements.gender.value)
-        // console.log(event.target.elements.password.value)
-        // console.log(event.target.elements.checkpassword.value)
 
 
         console.log('form value : ', formValue)
-
-        axios.post("https://bf5e-1-52-41-206.ngrok-free.app/API/Signupapiphpivymoda/ivymodasignup.php", {
-            id: formValue.phone,
-            name: formValue.name,
-            phone: formValue.phone,
-            email: formValue.email,
-            age: formValue.date,
-            password: formValue.password,
-           
-
-        }, {
-            headers: {
-                "ngrok-skip-browser-warning": "69420"
-            }
-        }).then((response) => {
-            setPost(response.data);
-        });
+        if (validateForm()) {
+            console.log(1)
+            axios.post("https://1a56-117-1-109-1.ngrok-free.app/API/Signupapiphpivymoda/ivymodasignup.php", {
+                id: formValue.phone,
+                name: formValue.name,
+                phone: formValue.phone,
+                email: formValue.email,
+                age: formValue.date,
+                password: formValue.password,
 
 
+            }, {
+                headers: {
+                    "ngrok-skip-browser-warning": "69420"
+                }
+            }).then((response) => {
+                setPost(response.data);
+            });
+
+        } else {
+            console.log(2)
+        }
 
     }
 
@@ -167,6 +154,7 @@ export default function SignUpIvymoda(props) {
                                             {formError.familyname}
                                         </div>
                                     )}
+                                    
                                 </div>
                             </div>
                             <div className="InformationIvymodaSignup" >
@@ -176,7 +164,7 @@ export default function SignUpIvymoda(props) {
                                     onChange={handleChange}></input>
                                 {formError.name && (
                                     <div className="ERROR_feedback">
-                                        {formError.name}
+                                        {formError.familyname}
                                     </div>
                                 )}
                             </div>

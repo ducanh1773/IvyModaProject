@@ -4,16 +4,19 @@ import IntroduceAndEndIvyPage from "../IntroduceAndEndIvyPage";
 import './index.css'
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { Await } from "react-router-dom";
 
 const initFormValue = {
     email: '',
     password: '',
-}
+};
 
 export default function SigninIVYmoda(props) {
 
-    const [formValue, setFormValue] = useState(initFormValue);
 
+    const [formValue, setFormValue] = useState(initFormValue);
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
 
 
 
@@ -38,25 +41,50 @@ export default function SigninIVYmoda(props) {
     }
 
 
+    let emailRegrex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+    const invalidEmail = (email) => {
+        return emailRegrex.test(email);
 
-    const [post, setPost] = useState(null);
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        axios.post('https://b097-117-1-109-1.ngrok-free.app/API/SigninIvymoda/signinivymoda.php', {
-            email: formValue.email,
-            password: formValue.password,
-            phone: formValue.phone,
-        },
-            {
-                headers: {
-                    "ngrok-skip-browser-warning": "69420"
-                }
-            }).then((response) => {
-                setPost(response.data);
-            });
     }
 
-    console.log(formValue.email);
+
+
+    const [post, setPost] = useState(null);
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        // axios.post('https://1a56-117-1-109-1.ngrok-free.app/API/SigninIvymoda/signinivymoda.php', {
+        //     phone: formValue.phone,
+        //     email: formValue.email,
+        //     password: formValue.password,
+
+
+        // }, {
+        //     headers: {
+        //         "ngrok-skip-browser-warning": "69420"
+        //     }
+        // }).then((response) => {
+        //     setPost(response.data);
+        // });
+        // event.preventDefault();
+
+
+        const response = await fetch('https://1a56-117-1-109-1.ngrok-free.app/API/SigninIvymoda/signinivymoda.php', {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json',
+                "ngrok-skip-browser-warning": "69420",
+            },
+            body: JSON.stringify({ username, password }),
+        });
+
+
+        const data = await response.json();
+        console.log(data);
+
+
+    }
+
 
     return (
         <div>
@@ -76,13 +104,13 @@ export default function SigninIVYmoda(props) {
                                 <div className="formSignInIVY">
                                     <input type="text" placeholder="Email/SĐT" className="signinEmail"
                                         name="email"
-                                        value={formValue.phone}
-                                        onChange={handleChange}></input>
+                                        value={username}
+                                        onChange={(e) => setUsername(e.target.value)}></input>
 
                                     <input type="password" placeholder="Mật khẩu" className="signinPassword"
                                         name="password"
-                                        value={formValue.password}
-                                        onChange={handleChange}></input>
+                                        value={password}
+                                        onChange={(e) => setPassword(e.target.value)}></input>
 
                                 </div>
                             </div>

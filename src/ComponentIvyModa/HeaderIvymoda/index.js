@@ -102,18 +102,18 @@ function HeaderIvyMoDa() {
                     <p className="OptionIvyModa" onMouseEnter={handleClick4}>VỀ CHÚNG TÔI</p>
                 </div>
                 <div className="LogoIvyOnHeader">
-                   <img src="https://pubcdn.ivymoda.com/ivy2/images/logo.png" className="ImgInLogoIvy"></img>
-
+                    <Link to='/'> <img src="https://pubcdn.ivymoda.com/ivy2/images/logo.png" className="ImgInLogoIvy"></img>
+                    </Link>
                 </div>
                 <div className="SearchBoxOnIvy" onMouseEnter={handleClick6}>
                     <div className="NaviSearchBar">
                         <div className=""></div>
-                        <div style={{paddingLeft:'2%'}}><box-icon name='search-alt-2'></box-icon></div>
+                        <div style={{ paddingLeft: '2%' }}><box-icon name='search-alt-2'></box-icon></div>
                         <input type="search" className="InputSearchInHeaderIvy" placeholder="Tìm Kiếm Sản Phẩm"></input>
                     </div>
                     <div className="OptionSearchOnHeaderIvy">
                         <div className="OptioneHeaderIvyOnSearch"><box-icon name='headphone'></box-icon></div>
-                       <Link to='/DangnhapIVYMODA' className="OptioneHeaderIvyOnSearch"><box-icon name='user' ></box-icon></Link>
+                        <Link to='/DangnhapIVYMODA' className="OptioneHeaderIvyOnSearch"><box-icon name='user' ></box-icon></Link>
                         <div className="OptioneHeaderIvyOnSearch"><box-icon name='shopping-bag' ></box-icon></div>
                     </div>
                 </div>
@@ -276,7 +276,7 @@ function HeaderIvyMoDa() {
             {showElement4 &&
                 <div className="AllInformationOfIvyOnNaviBar" onMouseLeave={hideClick4}>
                     <div className="InformationOfIvyOnNaviBar">
-                       <Link to="/GioithieuIvymoda" className="LinkToMorePrd"> <div className="SubjectForInformationOnNaviBar"><h5 className="SubjectOptionForWoman SubjectOptionForInFormation">Về IVY MODA</h5></div></Link>
+                        <Link to="/GioithieuIvymoda" className="LinkToMorePrd"> <div className="SubjectForInformationOnNaviBar"><h5 className="SubjectOptionForWoman SubjectOptionForInFormation">Về IVY MODA</h5></div></Link>
                         <div className="SubjectForInformationOnNaviBar"><h5 className="SubjectOptionForWoman SubjectOptionForInFormation        ">Fashion show</h5></div>
                         <div className="SubjectForInformationOnNaviBar"><h5 className="SubjectOptionForWoman SubjectOptionForInFormation">Hoạt động cộng đồng</h5></div>
                     </div>
